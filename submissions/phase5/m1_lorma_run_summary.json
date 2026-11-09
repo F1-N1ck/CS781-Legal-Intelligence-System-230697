@@ -1,0 +1,39 @@
+{
+ "model": "Phase-1 Model 1 (GQA) + LoRMA",
+ "lorma": {
+  "r": 16,
+  "alpha": 16,
+  "dropout": 0.05,
+  "targets": 56
+ },
+ "folds": [
+  {
+   "fold": 0,
+   "macro_f1_0.5": 0.3622786638642514,
+   "micro_f1_0.5": 0.4581192997169514,
+   "subset_acc_0.5": 0.03208197663282896,
+   "best_threshold": 0.6100000000000001,
+   "best_macro_f1": 0.37179550316789445,
+   "epochs_trained": 1
+  }
+ ],
+ "oof_macro_f1_global_threshold": 0.37179550316789445,
+ "global_threshold": 0.6100000000000001,
+ "oof_macro_f1_per_label_thresholds": 0.3982559099532755,
+ "held_out_check": {
+  "global": 0.3712891152848155,
+  "per_label": 0.3783910841045944
+ },
+ "config": {
+  "chunk_len": 1024,
+  "overlap": 128,
+  "max_chunks_train": 32,
+  "max_chunks_eval": 32,
+  "lr": 0.0005,
+  "epochs": 2,
+  "pos_weight_mode": "sqrt",
+  "effective_batch": 16,
+  "seed": 42,
+  "eval_only": true
+ }
+}

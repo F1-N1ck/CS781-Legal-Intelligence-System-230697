@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.pkl
+*.zip
+.ipynb_checkpoints/
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+!submissions/**/*.zip

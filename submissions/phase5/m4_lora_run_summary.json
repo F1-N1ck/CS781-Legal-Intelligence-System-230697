@@ -1,0 +1,48 @@
+{
+ "model": "Phase-1 Model 4 (GQA + MHA, MoE) + LoRA",
+ "lora": {
+  "r": 16,
+  "alpha": 16,
+  "dropout": 0.05,
+  "targets": 225,
+  "target_names": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ]
+ },
+ "folds": [
+  {
+   "fold": 0,
+   "macro_f1_0.5": 0.36036287100710895,
+   "micro_f1_0.5": 0.45200080840743734,
+   "subset_acc_0.5": 0.02777245738364298,
+   "best_threshold": 0.6100000000000001,
+   "best_macro_f1": 0.3753330907902225,
+   "epochs_trained": 0
+  }
+ ],
+ "oof_macro_f1_global_threshold": 0.3753330907902225,
+ "global_threshold": 0.6100000000000001,
+ "oof_macro_f1_per_label_thresholds": 0.40005123515340074,
+ "held_out_check": {
+  "global": 0.375045684377042,
+  "per_label": 0.3796024381052974
+ },
+ "config": {
+  "chunk_len": 1024,
+  "overlap": 128,
+  "max_chunks_train": 32,
+  "max_chunks_eval": 32,
+  "lr": 0.0005,
+  "epochs": 2,
+  "pos_weight_mode": "sqrt",
+  "effective_batch": 16,
+  "seed": 42,
+  "eval_only": true
+ }
+}

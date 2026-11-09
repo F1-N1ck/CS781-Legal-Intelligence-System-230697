@@ -1,0 +1,11 @@
+torch
+transformers
+tokenizers
+datasets
+huggingface_hub
+numpy
+scikit-learn
+bert-score
+rouge-score
+sacrebleu
+rank-bm25
